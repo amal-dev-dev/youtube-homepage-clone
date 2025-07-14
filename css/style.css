@@ -1,0 +1,276 @@
+:root {
+    --sidebar-collapse: 60px;
+    --sidebar-width: 250px;
+}
+
+html, body {
+     font-family: "Roboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.round-btn {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.round-btn:hover {
+    background-color: #ccc;
+}
+
+.round-btn-2 {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 2px 14px 4px 14px;
+    height: 40px;
+    text-align: center; 
+}
+
+.round-btn-2:hover {
+     background-color: #ccc;
+}
+
+.round-btn-2 i {
+    position: relative;
+    top: 4px;
+    font-size: 24px;
+}
+
+.logo {
+    width: 130px;
+}
+
+.yt-search-bar .form-control {
+    border-radius: 50px;
+    border: 1px solid #b1abab;
+}
+
+.yt-search-bar .input-group-text {
+    border-radius: 50px;
+    border: 1px solid #b1abab; 
+    font-size: 24px;
+    background-color: #eee;
+
+}
+
+.yt-sidebar {
+    position: fixed;
+    border-right: 1px solid #ddd;
+    width: var(--sidebar-width);
+    height: 100vh;
+    padding: 10px;
+}
+
+.yt-sidebar-mini {
+    width: var(--sidebar-collapse);
+}
+
+
+.yt-sidebar-collapsed {
+    padding-left: var(--sidebar-collapse) !important;
+}
+
+.yt-content {
+    padding-left: var(--sidebar-width);
+}
+
+.yt-sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.yt-sidebar ul li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.yt-sidebar ul li a {
+    display: block;
+    border-radius: 10px;
+    padding: 8px;
+    color: #000;
+    text-decoration: none;
+}
+
+.yt-sidebar ul li a i {
+    font-size: 20px;
+    margin-right: 12px;
+    position: relative;
+    top: 3px;
+}
+
+.yt-sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.overflow-sidebar {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: .1px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.yt-sidebar::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+.yt-sidebar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+.yt-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.yt-sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.yt-video-card {
+    margin-bottom: 30px;
+}
+
+.yt-video-card iframe {
+    border-radius: 14px;
+}
+
+.yt-video-card .video-title {
+    font-size: 16px;
+    color: #000;
+}
+
+.yt-video-card .video-tag,
+.yt-video-card label {
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 1px;
+}
+
+.yt-badge-area {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 6px;
+}
+
+.yt-badge-area a {
+    display: inline-block;
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: #000;
+    text-decoration: none;
+    background-color: #eee;
+    font-size: 14px;
+    margin-right: 12px;
+    white-space: nowrap;
+}
+
+.yt-badge-area a:hover {
+    background-color: #ccc;
+}
+
+.yt-sidebar-mini ul li a span {
+    display: block;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .yt-navbar {
+    flex-direction: column;
+    padding: 8px 0;
+  }
+  .yt-search-bar {
+    display: none !important;
+  }
+
+  .round-btn-2 + .round-btn, /* notification bell button */
+  .round-btn-2 + .round-btn  { /* user button if needed */
+    display: none !important;
+  }
+  .yt-sidebar {
+    position: fixed;
+    left: -100vw;
+    width: 55vw;
+    z-index: 2000;
+    transition: left 0.3s;
+    height: 100vh;
+    background: #fff;
+    top: 50px;
+  
+  }
+  .yt-sidebar.yt-sidebar-mini {
+    left: 0;
+  }
+  .yt-content {
+    padding-left: 0;
+    margin-top: 60px;
+  }
+  .yt-badge-area {
+    top: 48px;
+    font-size: 12px;
+    padding: 4px 0;
+  }
+  .yt-video-card {
+    margin-bottom: 24px;
+  }
+  .yt-video-card iframe {
+    width: 100%;
+    height: 180px;
+  }
+  .col-md-4 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  #create{
+    overflow: visible;
+    margin-top: -60px;
+    margin-right: -5px;
+
+  }
+
+  #profile{
+    overflow: visible;
+    margin-top: -60px;
+    margin-right: -10px;
+  }
+
+  div.p-3{
+    overflow: visible;
+    margin-top: -80px;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 501px) {
+  .col-md-4 {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+

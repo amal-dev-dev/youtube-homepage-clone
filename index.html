@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="css/images/youtube-icon.avif">
+    <title>YouTube</title>
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="yt-navbar p-2 sticky-top bg-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <button id="sidebarBtn1" class="btn round-btn"> <i class='bxr  bx-menu-wider'  ></i> </button>
+                    <img src="css/images/Screenshot 2025-07-07 225908.png" class="logo" alt="youtude">
+                </div>
+                <div class="col-md-6">
+                    <div class="yt-search-bar d-flex">
+                         <div class="input-group">
+                            <input type="search" class="form-control" placeholder="Search">
+                            <button class="input-group-text" id="basic-addon2"><i class="bx bx-search"></i></button>
+                        </div>
+                        <button class="btn round-btn ms-2"><i class='bx  bxs-microphone mt-1' ></i> </button>
+                     </div>
+
+                </div>
+                <div class="col-md-3">
+                    <div class="text-end">
+                        <button class="btn round-btn-2" id="create"><i class="bx bx-plus"></i> Create</button>
+                        <button class="btn round-btn ms-2"><i class='bx  bxs-bell mt-1' ></i> </button>
+                        <button class="btn round-btn ms-2" id="profile"><i class='bx  bxs-user mt-1' ></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="yt-main-area">
+        <div id="mySidebar" class="yt-sidebar overflow-sidebar mt-2">
+
+            <ul>
+                <li><a href="" class="active"><i class="bx bx-home"></i><span>Home</span></a></li>
+                <li><a href=""><i class="bxr  bx-store-alt"></i><span>Shorts</span></a></li>
+                <li><a href=""><i class="bx bx-play"></i><span>Subscriptions</span></a></li>
+                <li><hr></li>
+
+ 
+                <li><a href=""> You <i class="bx bx-chevron-right"></i></a></li>
+                <li><a href=""><i class="bxr  bx-history"></i><span>History</span></a></li>
+                <li><a href=""><i class="bxr  bx-list-play"></i><span>Playlists</span></a></li>
+                <li><a href=""><i class="bx bx-video"></i><span>Your Video</span></a></li>
+                <li><a href=""><i class="bxr  bx-clock-5"></i><span>Watch Later</span></a></li>
+                <li><a href=""><i class="bx bx-like"></i><span>Liked Videos</span></a></li>
+                <li><a href=""><i class="bx bx-cut"></i><span>Your Clips</span></a></li>
+                <li><hr></li>
+
+                <li><a href="" class="fw-bold"> Subscriptions </a></li>
+                <li><a href=""><i class="bxr  bx  bxs-user"></i><span>Brototype Malayalam</span></a></li>
+                <li><a href=""><i class="bxr  bx  bxs-user"></i><span>Coding Guru</span></a></li>
+                <li><a href=""><i class="bxr  bx  bxs-user"></i><span>Tech Tech</span></a></li>
+                <li><a href=""><i class="bxr  bx  bxs-user"></i><span>MediaTech</span></a></li>
+                <li><a href=""><i class="bxr  bx  bxs-user"></i><span>Code Coders</span></a></li>
+                <li><a href=""><i class="bxr  bx  bxs-user"></i><span>MediaTech</span></a></li>
+                <li><a href=""><i class="bxr  bx  bxs-user"></i><span>Code Coders</span></a></li>
+            </ul>
+        </div>
+        <div id="myContentArea" class="yt-content">
+            <div class="p-3">
+
+                <div class="yt-badge-area mb-4">
+                    <a href="">All</a>
+                    <a href="">Music</a>
+                    <a href="">Mix</a>
+                    <a href="">Recent Plays</a>
+                    <a href="">Live</a>
+                    <a href="">Marvel</a>
+                    <a href="">Studios</a>
+                    <a href="">Grapics Desiging</a>
+                    <a href="">Malayalam Cinema</a>
+                    <a href="">Ai</a>
+                    <a href="">Prodcasts</a>
+                    <a href="">SuperHeros Movies</a>
+                    <a href="">Comedy</a>
+                    <a href="">Watched</a>
+                    <a href="">Web Development</a>
+                    <a href="">Music Mix</a>
+
+                </div>
+              
+                <div class="yt-videos-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/1aojy1pS_f8?si=V7wSmuZhpGHkFg5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="d-flex mt-2">
+                                        <div>
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Making of Minnal Murali | Tovino Thomas,Basil Joseph,Sophia Paul | Netflix India</h5>
+                                             <p class="video-tag">TopMovieClips area</p>
+                                             <label>1.8M views</label> - <label>3 years ago</label>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            
+                            <div class="col-md-4">
+                            <a href="video-view.html">
+                                <div class="yt-video-card">
+                                <iframe class="w-100" height="210" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="HTML Crash Course" frameborder="0" allowfullscreen></iframe>
+                                <div class="d-flex mt-2">
+                                    <div><button class="btn round-btn"><i class="bx bx-user"></i></button></div>
+                                    <div class="ms-3">
+                                    <h5 class="video-title">HTML Crash Course for Beginners</h5>
+                                    <p class="video-tag">Traversy Media</p>
+                                    <label>6.1M views</label> - <label>4 years ago</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+
+                            <div class="col-md-4">
+                            <a href="video-view.html">
+                                <div class="yt-video-card">
+                                <iframe class="w-100" height="210" src="https://www.youtube.com/embed/1Rs2ND1ryYc" title="CSS Tutorial" frameborder="0" allowfullscreen></iframe>
+                                <div class="d-flex mt-2">
+                                    <div><button class="btn round-btn"><i class="bx bx-user"></i></button></div>
+                                    <div class="ms-3">
+                                    <h5 class="video-title">CSS Tutorial - Full Course for Beginners</h5>
+                                    <p class="video-tag">freeCodeCamp.org</p>
+                                    <label>8.7M views</label> - <label>3 years ago</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+
+                            <div class="col-md-4">
+                            <a href="video-view.html">
+                                <div class="yt-video-card">
+                                <iframe class="w-100" height="210" src="https://www.youtube.com/embed/hdI2bqOjy3c" title="JavaScript Full Course" frameborder="0" allowfullscreen></iframe>
+                                <div class="d-flex mt-2">
+                                    <div><button class="btn round-btn"><i class="bx bx-user"></i></button></div>
+                                    <div class="ms-3">
+                                    <h5 class="video-title">JavaScript Full Course (2022)</h5>
+                                    <p class="video-tag">Programming with Mosh</p>
+                                    <label>4.5M views</label> - <label>2 years ago</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+
+                            <div class="col-md-4">
+                            <a href="video-view.html">
+                                <div class="yt-video-card">
+                                <iframe class="w-100" height="210" src="https://www.youtube.com/embed/W6NZfCO5SIk" title="JavaScript Tutorial" frameborder="0" allowfullscreen></iframe>
+                                <div class="d-flex mt-2">
+                                    <div><button class="btn round-btn"><i class="bx bx-user"></i></button></div>
+                                    <div class="ms-3">
+                                    <h5 class="video-title">JavaScript Tutorial for Beginners</h5>
+                                    <p class="video-tag">Mosh Hamedani</p>
+                                    <label>9.7M views</label> - <label>4 years ago</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+
+                            <div class="col-md-4">
+                            <a href="video-view.html">
+                                <div class="yt-video-card">
+                                <iframe class="w-100" height="210" src="https://www.youtube.com/embed/rfscVS0vtbw" title="Python for Beginners" frameborder="0" allowfullscreen></iframe>
+                                <div class="d-flex mt-2">
+                                    <div><button class="btn round-btn"><i class="bx bx-user"></i></button></div>
+                                    <div class="ms-3">
+                                    <h5 class="video-title">Python for Beginners - Full Course</h5>
+                                    <p class="video-tag">freeCodeCamp.org</p>
+                                    <label>45M views</label> - <label>4 years ago</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+
+                            <div class="col-md-4">
+                            <a href="video-view.html">
+                                <div class="yt-video-card">
+                                <iframe class="w-100" height="210" src="https://www.youtube.com/embed/Ke90Tje7VS0" title="React JS Tutorial" frameborder="0" allowfullscreen></iframe>
+                                <div class="d-flex mt-2">
+                                    <div><button class="btn round-btn"><i class="bx bx-user"></i></button></div>
+                                    <div class="ms-3">
+                                    <h5 class="video-title">React JS Crash Course</h5>
+                                    <p class="video-tag">Traversy Media</p>
+                                    <label>3.8M views</label> - <label>5 years ago</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+
+                            <div class="col-md-4">
+                            <a href="video-view.html">
+                                <div class="yt-video-card">
+                                <iframe class="w-100" height="210" src="https://www.youtube.com/embed/kUMe1FH4CHE" title="Web Dev Full Course" frameborder="0" allowfullscreen></iframe>
+                                <div class="d-flex mt-2">
+                                    <div><button class="btn round-btn"><i class="bx bx-user"></i></button></div>
+                                    <div class="ms-3">
+                                    <h5 class="video-title">Full Web Development Course</h5>
+                                    <p class="video-tag">Bro Code</p>
+                                    <label>2.1M views</label> - <label>1 year ago</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+
+                            <!-- 13 more video cards are now added here (skipping display for brevity, but included in document) -->
+                            <div class="col-md-4">
+                            <a href="video-view.html">
+                                <div class="yt-video-card">
+                                <iframe class="w-100" height="210" src="https://www.youtube.com/embed/Zi_XLOBDo_Y" title="Git Tutorial for Beginners" frameborder="0" allowfullscreen></iframe>
+                                <div class="d-flex mt-2">
+                                    <div><button class="btn round-btn"><i class="bx bx-user"></i></button></div>
+                                    <div class="ms-3">
+                                    <h5 class="video-title">Git and GitHub for Beginners - Crash Course</h5>
+                                    <p class="video-tag">Academind</p>
+                                    <label>1.1M views</label> - <label>2 years ago</label>
+                                    </div>
+                                </div>
+                                </div>
+                            </a>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/3E0dqwQwX4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">How to Learn Coding Fast and Never Forget It</h5>
+                                            <p class="video-tag">Tech With Tim</p>
+                                            <label>850K views</label> . <label>2 years ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/8AWEPx5cHWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Cursor Vibe Coding Tutorial – For COMPLETE Beginners</h5>
+                                            <p class="video-tag">Tech With Tim</p>
+                                            <label>120K views</label> . <label>6 months ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/gJrjgg1KVL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Spring Boot Tutorial for Beginners [2025]</h5>
+                                            <p class="video-tag">CodeAcademy</p>
+                                            <label>350K views</label> . <label>4 months ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/yyUHQIec83I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Golang Tutorial for Beginners | Full Go Course</h5>
+                                            <p class="video-tag">freeCodeCamp.org</p>
+                                            <label>2.1M views</label> . <label>3 years ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/Vi9bxu-M-ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">100+ JavaScript Concepts you MUST Know</h5>
+                                            <p class="video-tag">Fireship</p>
+                                            <label>1.5M views</label> . <label>1 year ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/MkcfB7S4fq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Linux Tutorial for Beginners: Introduction to Linux</h5>
+                                            <p class="video-tag">ProgrammingKnowledge</p>
+                                            <label>4.2M views</label> . <label>5 years ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/kqtD5dpn9C8" title="Python for Beginners - Full Course [2023]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Python for Beginners - Full Course [2023]</h5>
+                                            <p class="video-tag">freeCodeCamp.org</p>
+                                            <label>18M views</label> . <label>1 year ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/8cm1x4bC610" title="Build Responsive Website using HTML CSS & JavaScript" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Build Responsive Website using HTML CSS & JavaScript</h5>
+                                            <p class="video-tag">GreatStack</p>
+                                            <label>3.7M views</label> . <label>2 years ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/pU4UeH1mfFc" title="Data Structures Full Course using C and C++" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Data Structures Full Course using C and C++</h5>
+                                            <p class="video-tag">Apna College</p>
+                                            <label>6.4M views</label> . <label>1 year ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="yt-video-card">
+                                    <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/SqrbIlUwR0U" title="Docker Tutorial for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                            <h5 class="video-title">Docker Tutorial for Beginners</h5>
+                                            <p class="video-tag">TechWorld with Nana</p>
+                                            <label>2.3M views</label> . <label>3 years ago</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/K5KVEU3aaeQ" title="Python Full Course for Beginners [2025]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">Python Full Course for Beginners [2025]</h5>
+                                        <p class="video-tag">freeCodeCamp.org</p>
+                                        <label>~1.6M views</label> . <label>4 months ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/3OqiKTyH4r0" title="ReactJS Beginner Course 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">ReactJS Beginner Course 2025</h5>
+                                        <p class="video-tag">PedroTech</p>
+                                        <label>~300K views</label> . <label>2 months ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/ZUpE1hNQ1T0" title="Kubernetes Crash Course for Absolute Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">Kubernetes Crash Course for Absolute Beginners</h5>
+                                        <p class="video-tag">TechWorld with Nana</p>
+                                        <label>~400K views</label> . <label>5 months ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/Cqv_2OlR6e4" title="Machine Learning Tutorial For Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">Machine Learning Tutorial For Beginners</h5>
+                                        <p class="video-tag">Simplilearn</p>
+                                        <label>~200K views</label> . <label>2 months ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/yLv8kud-iAE" title="Machine Learning Full Course 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">Machine Learning Full Course 2025</h5>
+                                        <p class="video-tag">Simplilearn</p>
+                                        <label>~8K views</label> . <label>6 months ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 6    -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/Pc4S4RXsJyo" title="Machine Learning Full Course For Beginners 2025 Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">Machine Learning Full Course For Beginners 2025 Part 1</h5>
+                                        <p class="video-tag">CodeBasics</p>
+                                        <label>~100K views</label> . <label>1 month ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/veqPPfBGtmA" title="Gen AI Full Course 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">Gen AI Full Course 2025</h5>
+                                        <p class="video-tag">Simplilearn</p>
+                                        <label>~150K views</label> . <label>5 months ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 8 -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/ytbv?=SCOPES" title="Learn Python for Data Science – Full Course for Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">Learn Python for Data Science – Full Course</h5>
+                                        <p class="video-tag">freeCodeCamp.org</p>
+                                        <label>~80K views</label> . <label>3 weeks ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 9 -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/xxRAA0v2lvM" title="React Tutorial For Beginners" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">React Tutorial For Beginners</h5>
+                                        <p class="video-tag">Web Dev Simplified</p>
+                                        <label>16K views</label> . <label>2 months ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- 10 -->
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                    <iframe class="w-100" height="210" src="https://www.youtube.com/embed/ZUpE1hNQ1T0" title="Kubernetes Crash Course (alt)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="d-flex">
+                                        <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                        <div class="ms-3">
+                                        <h5 class="video-title">Kubernetes Crash Course (alternative)</h5>
+                                        <p class="video-tag">TechWorld with Nana</p>
+                                        <label>~250K views</label> . <label>3 weeks ago</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/F5Ri_HhziI0" title="Angular Tutorial for Beginners: Learn Angular & TypeScript" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Angular Tutorial for Beginners</h5>
+                                                <p class="video-tag">Programming with Mosh</p>
+                                                <label>920K views</label> . <label>2 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/MkESyVB4oUw" title="Machine Learning Full Course - Learn ML in 10 Hours" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Machine Learning Full Course</h5>
+                                                <p class="video-tag">freeCodeCamp.org</p>
+                                                <label>2.3M views</label> . <label>3 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/8ext9G7xspg" title="Python OOP Tutorial - Object Oriented Programming" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Python OOP Tutorial</h5>
+                                                <p class="video-tag">Tech With Tim</p>
+                                                <label>480K views</label> . <label>1 year ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/3jZ5vnv-LZc" title="Git and GitHub for Beginners - Crash Course" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Git and GitHub Crash Course</h5>
+                                                <p class="video-tag">Traversy Media</p>
+                                                <label>1.1M views</label> . <label>2 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/yQwmC9kE-f0" title="REST API Crash Course – Build a RESTful API with Node and Express" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">REST API Crash Course</h5>
+                                                <p class="video-tag">Traversy Media</p>
+                                                <label>760K views</label> . <label>1 year ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/kcGk4iAGCtg" title="Intro to Web Development - Full Course" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Intro to Web Development</h5>
+                                                <p class="video-tag">Web Dev Simplified</p>
+                                                <label>500K views</label> . <label>8 months ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/3PHXvlpOkf4" title="Node.js Tutorial for Beginners: Learn Node in 1 Hour" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Node.js Tutorial for Beginners</h5>
+                                                <p class="video-tag">Programming with Mosh</p>
+                                                <label>2.5M views</label> . <label>3 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/rfscVS0vtbw" title="Learn Python - Full Course for Beginners [Tutorial]" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Learn Python - Full Course for Beginners</h5>
+                                                <p class="video-tag">freeCodeCamp.org</p>
+                                                <label>41M views</label> . <label>4 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="HTML Tutorial for Beginners: Learn HTML in 1 Hour" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">HTML Tutorial for Beginners</h5>
+                                                <p class="video-tag">Programming with Mosh</p>
+                                                <label>3.8M views</label> . <label>4 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/Z1Yd7upQsXY" title="Learn JavaScript - Full Course for Beginners" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Learn JavaScript - Full Course for Beginners</h5>
+                                                <p class="video-tag">freeCodeCamp.org</p>
+                                                <label>9.3M views</label> . <label>3 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/mU6anWqZJcc" title="JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">JavaScript Tutorial for Beginners</h5>
+                                                <p class="video-tag">Programming with Mosh</p>
+                                                <label>6.3M views</label> . <label>2 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/Ke90Tje7VS0" title="React JS Crash Course" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">React JS Crash Course</h5>
+                                                <p class="video-tag">Traversy Media</p>
+                                                <label>4.1M views</label> . <label>3 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/pKd0Rpw7O48" title="C# Tutorial - Full Course for Beginners" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">C# Tutorial - Full Course for Beginners</h5>
+                                                <p class="video-tag">freeCodeCamp.org</p>
+                                                <label>3.4M views</label> . <label>2 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/JUv3x8xcyqQ" title="Docker Tutorial for Beginners" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Docker Tutorial for Beginners</h5>
+                                                <p class="video-tag">Academind</p>
+                                                <label>750K views</label> . <label>2 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/LlCR2rIK9q4" title="Kubernetes Full Course - Learn Kubernetes in 8 Hours" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Kubernetes Full Course</h5>
+                                                <p class="video-tag">Simplilearn</p>
+                                                <label>1.2M views</label> . <label>1 year ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/kqtD5dpn9C8" title="Python Full Course for Beginners" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">Python Full Course for Beginners</h5>
+                                                <p class="video-tag">Programming with Mosh</p>
+                                                <label>15M views</label> . <label>2 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/7S_tz1z_5bA" title="MySQL Tutorial for Beginners" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">MySQL Tutorial for Beginners</h5>
+                                                <p class="video-tag">Programming with Mosh</p>
+                                                <label>2.1M views</label> . <label>3 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/0sOvCWFmrtA" title="MongoDB Tutorial for Beginners" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">MongoDB Tutorial for Beginners</h5>
+                                                <p class="video-tag">Programming with Mosh</p>
+                                                <label>1.3M views</label> . <label>2 years ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="yt-video-card">
+                                        <iframe class="w-100" height="210px" src="https://www.youtube.com/embed/UnTQVlqmDQ0" title="PostgreSQL Tutorial for Beginners" frameborder="0" allowfullscreen></iframe>
+                                        <div class="d-flex">
+                                            <button class="btn round-btn"><i class="bx bx-user"></i></button>
+                                            <div class="ms-3">
+                                                <h5 class="video-title">PostgreSQL Tutorial for Beginners</h5>
+                                                <p class="video-tag">Programming with Mosh</p>
+                                                <label>800K views</label> . <label>1 year ago</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div> 
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+<script>
+    $(document).ready(function() {
+
+        var sidebarStatus = true;
+        $('#sidebarBtn1').click(function (e) {
+            e.preventDefault();
+            
+            if(sidebarStatus){
+                $('#mySidebar').addClass('yt-sidebar-mini');
+                $('#myContentArea').addClass('yt-sidebar-collapsed');
+            }else{
+                $('#mySidebar').removeClass('yt-sidebar-mini');
+                $('#myContentArea').removeClass('yt-sidebar-collapsed');
+            }
+
+            sidebarStatus = !sidebarStatus;
+           
+        });
+    });
+</script>
+</body>
+</html>
